@@ -1,0 +1,22 @@
+# Core dependencies for GPT-OSS fine-tuning with Unsloth
+torch>=2.8.0
+triton>=3.4.0
+numpy
+torchvision
+bitsandbytes
+
+# Unsloth packages
+git+https://github.com/unslothai/unsloth-zoo
+git+https://github.com/unslothai/unsloth
+
+# Transformers and related
+git+https://github.com/huggingface/transformers
+git+https://github.com/triton-lang/triton.git@main#subdirectory=python/triton_kernels
+
+# Training and datasets
+trl
+datasets
+accelerate
+
+# Utilities
+uv
